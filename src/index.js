@@ -4,10 +4,10 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
-import Movie from './components/movieComponent';
+import Movies from './components/movies';
 ReactDOM.render(
   <React.StrictMode>
-    <Movie />
+    <Movies />
   </React.StrictMode>,
   document.getElementById('root')
 );
