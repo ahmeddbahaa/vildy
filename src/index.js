@@ -6,9 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 import Movies from './components/movies';
 ReactDOM.render(
-  <React.StrictMode>
+  <main className="container">
     <Movies />
-  </React.StrictMode>,
+  </main>,
   document.getElementById('root')
 );
 
