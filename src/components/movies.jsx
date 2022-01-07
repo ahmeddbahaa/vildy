@@ -33,11 +33,10 @@ class Movies extends Component {
     this.setState({ currentPage: page });
   };
   handleGenreSelect = (genre) => {
-    console.log("clicked", genre);
     this.setState({ currentPage: 1, selectedGenre: genre });
   };
-  handleSort = (path) => {
-    this.setState({ sortColumn: { path: path, order: "asc" } });
+  handleSort = (sortColumn) => {
+    this.setState({ sortColumn });
   };
 
   render() {
@@ -80,6 +79,7 @@ class Movies extends Component {
             movies={movies}
             onLike={this.handleLike}
             onDelete={this.handleDelete}
+            sortColumn={sortColumn}
             onSort={this.handleSort}
           />
           <Pagination
